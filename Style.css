@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #333;
+  font-family: sans-serif;
+}
+
+#gameArea {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  margin: auto;
+  background: #555;
+  overflow: hidden;
+}
+
+#leftCity, #rightCity {
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  background: url('https://i.imgur.com/9JbT9V9.png') repeat-y;
+}
+
+#leftCity { left: 0; }
+#rightCity { right: 0; }
+
+#car {
+  position: absolute;
+  bottom: 20px;
+  left: 175px;
+  width: 50px;
+  height: 100px;
+  background: red;
+}
+
+#enemyCar {
+  position: absolute;
+  top: -120px;
+  left: 175px;
+  width: 50px;
+  height: 100px;
+  background: blue;
+}
+
+#controls {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#controls button {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+}
+
+#gameOver {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  font-size: 30px;
+  color: red;
+}
